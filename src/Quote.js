@@ -9,7 +9,7 @@ export default function Quote({ quote }) {
       </div>
       <a
         className='twitter-share-button'
-        href={`https://twitter.com/intent/tweet?text="${quote.text}"%0a- ${quote.author}%0a%0aQuote found on: link`}
+        href={`https://twitter.com/intent/tweet?text="${quote.text}"%0a- ${quote.author}%0a%0aQuote found on: random-quote-generator-taupe.vercel.app`}
       >
         Tweet this quote<i className='fa-brands fa-twitter'></i>
       </a>
