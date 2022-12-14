@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@500;700&display=swap');
+
+:root {
+  --neutral: #3c3c3c;
+  --primary: #fcf0cf;
+}
+
+::moz-selection {
+  color: var(--neutral);
+  background-color: var(--primary);
+}
+
+::selection {
+  color: var(--neutral);
+  background-color: var(--primary);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Fira Sans Extra Condensed', sans-serif;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  position: fixed;
+  top: 2rem;
+  font-size: 3rem;
+  color: var(--neutral);
+}
+
+.fa-quote-left {
+  position: fixed;
+  top: 1.5rem;
+  font-size: 9rem;
+  color: var(--neutral);
+  opacity: 0.1;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--primary);
+  transition: background-color 0.5s ease-in-out;
+}
+
+.quote-container {
+  width: 60vw;
+  height: auto;
+  max-height: 90vh;
+  padding: 1rem 4rem;
+  border-radius: 1rem;
+  background-color: var(--neutral);
+  color: var(--primary);
+  transition: color 0.5s ease-in-out;
+}
+
+.quote-text {
+  font-weight: normal;
+  font-size: 3rem;
+  width: 90%;
+}
+
+.quote-author {
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.twitter-share-button {
+  margin-top: 1rem;
+  color: var(--neutral);
+}
+
+.next-quote-btn {
+  position: fixed;
+  bottom: 5rem;
+  margin: 0 auto;
+  width: 15rem;
+  height: 4rem;
+  padding: 1rem;
+  background-color: var(--neutral);
+  color: var(--primary);
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  transition: color 0.5s ease-in-out;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: var(--neutral);
+}
+
+.fa-angles-right,
+.fa-github,
+.fa-linkedin,
+.fa-twitter {
+  margin-left: 0.5rem;
+}
+
+.fa-github,
+.fa-linkedin,
+.fa-twitter {
+  font-size: 1.2rem;
+}
+
+a,
+a:active,
+a:visited {
+  color: var(--neutral);
+}
+
+@media screen and (max-width: 992px) {
+  .title {
+    top: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .fa-quote-left {
+    top: 0.7rem;
+    font-size: 4.5rem;
+  }
+
+  .quote-container {
+    padding: 1rem 2rem;
+    width: 80vw;
+  }
+
+  .quote-text {
+    font-size: 2.5rem;
+    width: 90%;
+  }
+
+  .quote-author {
+    font-size: 1rem;
+  }
+
+  .next-quote-btn {
+    bottom: 3rem;
+    margin: 0 auto;
+    width: 10rem;
+    height: 3rem;
+    padding: 1rem;
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+  }
+
+  .fa-github,
+  .fa-linkedin,
+  .fa-twitter {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 688px) {
+  .quote-container {
+    padding: 1rem 1.5rem;
+    width: 90vw;
+  }
+
+  .quote-text {
+    font-size: 2rem;
+    width: 90%;
+  }
+}
