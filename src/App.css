@@ -70,7 +70,14 @@ main {
   border-radius: 1rem;
   background-color: var(--neutral);
   color: var(--primary);
-  transition: color 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.quote-container:hover,
+.next-quote-btn:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 0.3rem 1rem var(--neutral);
+  transition: 0.5s ease-in-out;
 }
 
 .quote-text {
@@ -85,7 +92,7 @@ main {
 }
 
 .twitter-share-button {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   color: var(--neutral);
 }
 
@@ -100,7 +107,7 @@ main {
   color: var(--primary);
   font-size: 1.5rem;
   line-height: 1.5rem;
-  transition: color 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
   font-weight: bold;
   border: none;
   border-radius: 0.5rem;
@@ -188,7 +195,17 @@ a:visited {
   }
 
   .quote-text {
-    font-size: 2rem;
-    width: 90%;
+    font-size: 1.6rem;
+    width: 95%;
+  }
+
+  footer p {
+    font-size: 0.6rem;
+  }
+
+  .fa-github,
+  .fa-linkedin,
+  .fa-twitter {
+    font-size: 0.7rem;
   }
 }
