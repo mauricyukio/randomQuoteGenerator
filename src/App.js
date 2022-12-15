@@ -44,7 +44,7 @@ function App() {
   ]
 
   useEffect(() => {
-    setCurrentQuote({ text: 'Loading, please wait...', author: null })
+    setCurrentQuote({ text: 'Loading, please wait...', author: 'This is not a quote, by the way' })
   }, [])
 
   useEffect(() => {
